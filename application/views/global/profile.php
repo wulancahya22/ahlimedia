@@ -31,9 +31,9 @@
 	</div>
     <div class="col m6">
         <div class="card-panel teal darken-2 white-text">
-            <h6><b>Identitas Perpustakaan</b></h6><hr>
+            <h6><b>Identitas Ahli Media</b></h6><hr>
             <p>
-                JLN. SUDIRMAN NOMOR 12 - SMAN 1 GENDING, KABUPATEN PROBOLINGGO, KECAMATAN GENDING .
+                Jl. Ki Ageng Gribig Gang Kaserin MU no.36 - Lesanpuro, Kedungkandang, Kota Malang
             </p>
         </div>
     </div>

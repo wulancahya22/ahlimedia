@@ -42,7 +42,7 @@
 
 
             <nav class="brown">
-            	<a href="<?php echo base_url();?>Buku"   class="brand-logo" ><img src="<?php echo base_url(); ?>assets2/img/a.png" style="height: 80px; width: 80px; border-radius: 90%;" alt="" ></a>
+            	<a href="<?php echo base_url();?>Buku"   class="brand-logo" ><img src="<?php echo base_url(); ?>assets2/img/a.png" style="height: 70px; width: 70px; border-radius: 90%;" alt="" ></a>
                 <div class="container">
                   <div class="dropdown">
                   	<div class="nav-wrapper">
@@ -50,13 +50,13 @@
                             <ul class="right hide-on-med-and-down">
 
                                 
-                                <li><a href="<?php echo base_url();?>Buku/profile">Tentang Perputakaan</a></li>
+                                <li><a href="<?php echo base_url();?>Buku/profile">Tentang Ahli Media</a></li>
                                 <li><a class="btn brown" href="<?php echo base_url();?>/auth">MASUK</a></li>
                             </ul>
                         </div>
                       <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"> Main Menu <span class="caret"></span></button>
                       <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo base_url();?>Buku/profile">Tentang Perputakaan</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo base_url();?>Buku/profile">Tentang Ahli Media</a></li>
                         <li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo base_url();?>/auth">MASUK</a></li>
                       </ul>
                     </div>
@@ -77,12 +77,10 @@
         <div class="row center">
           
         </div>
-        <h3 class="header center black-text" style="font-family: mojo">PERPUSTAKAAN</h3>
-       <h3 class="header center black-text" style="font-family: mojo">ONLINE</h3>
-
+      
       </div>
     </div>
-    <div class="parallax"><img src="<?php echo base_url(); ?>assets2/img/6.jpg" alt=""></div>
+    <div class="parallax"><img src="<?php echo base_url(); ?>assets2/img/6.png" alt=""></div>
   </div>
   <!-- Slider end -->
 
@@ -102,7 +100,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    ICT &copy; : <a href="#" target="_blank">MaBook</a>
+                    ICT &copy; : <a href="#" target="_blank">Ahli Media</a>
                 </div>
 
             </div>

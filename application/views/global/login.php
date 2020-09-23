@@ -46,7 +46,7 @@
 									<span class="green">Sistem</span>
 									<span class="white" id="id-text2">Perpustakaan</span>
 								</h1>
-								<h4 class="orange" id="id-company-text">Sekolah</h4>
+								<h4 class="orange" id="id-company-text">Ahli Media</h4>
 							</div>
 
 							<div class="space-6"></div>

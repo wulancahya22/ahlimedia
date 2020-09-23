@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('assets2/img/logo.png'); ?>">
-    <title>Login Perpustakaan</title>
+    <title>Login Ahli Media</title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <style>
  
@@ -64,12 +64,12 @@ label{
 </head>
   <body>
 
-	<h1 style="font-family: CocogooseNarrows">Selamat Datang di Perpustakaan Online <br/></h1>
+	<h1 style="font-family: CocogooseNarrows">Selamat Datang di Perpustakaan Ahli Media <br/></h1>
 
 	<div class="kotak_login" style="font-family: streetslab">
 		<p class="tulisan_login">Silahkan login</p>
             <center>
-                <img  src="<?php echo base_url(); ?>/assets2/img/logo.png" class="profile-img" alt="logo images" style="height: 90px; width: 90px; border-radius: 50%;	">    
+                <img  src="<?php echo base_url(); ?>/assets2/img/a.png" class="profile-img" alt="logo images" style="height: 90px; width: 90px; border-radius: 50%;	">    
             </center>
             <form action="<?php echo base_url('auth/ceklogin');?>" method="POST">
                 <div><?=validation_errors()?></div>
