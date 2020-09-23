@@ -1,0 +1,501 @@
+/* line 1, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+.categories-courses {
+  display: flex;
+  padding: 0 15px;
+  flex-grow: 1;
+  justify-content: center; }
+  /* line 7, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+  .categories-courses-single > a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 28px 30px;
+    color: #fff !important;
+    font-weight: 300;
+    font-size: 16px; }
+    /* line 15, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+    .categories-courses-single > a:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      transform: scale(0.9);
+      opacity: 0;
+      transition: .3s ease;
+      z-index: 0; }
+    /* line 27, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+    .categories-courses-single > a > * {
+      position: relative;
+      z-index: 100; }
+    /* line 31, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+    .categories-courses-single > a span {
+      position: relative;
+      top: 2px;
+      letter-spacing: -0.1px; }
+    /* line 36, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+    .categories-courses-single > a i {
+      font-size: 33px;
+      margin-right: 15px; }
+  /* line 43, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+  .categories-courses-single:hover > a:after {
+    background-color: #0050b4;
+    opacity: .8;
+    transform: scale(1); }
+  /* line 49, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+  .categories-courses-single:hover .categories-courses-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transition: .3s .3s ease; }
+  /* line 56, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+  .categories-courses-dropdown {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    padding: 38px 0 34px;
+    top: 100%;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden; }
+    /* line 66, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+    .categories-courses-dropdown > * {
+      position: relative;
+      z-index: 100; }
+    /* line 70, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+    .categories-courses-dropdown:after {
+      content: '';
+      position: absolute;
+      left: -400px;
+      right: -400px;
+      top: 0;
+      bottom: 0;
+      background-color: #0050b4;
+      opacity: .8;
+      z-index: 0; }
+    /* line 81, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+    .categories-courses-dropdown ul {
+      list-style: none;
+      display: flex;
+      width: 73%;
+      flex-wrap: wrap;
+      margin: 0; }
+      /* line 87, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+      .categories-courses-dropdown ul li {
+        width: 20%;
+        margin-bottom: 6px; }
+        /* line 90, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+        .categories-courses-dropdown ul li a {
+          color: #fff !important;
+          font-size: 16px;
+          font-weight: 300; }
+          /* line 94, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+          .categories-courses-dropdown ul li a i {
+            display: inline-block;
+            position: relative;
+            top: -1px;
+            font-size: 11px;
+            margin-right: 5px;
+            transition: .3s ease; }
+          /* line 103, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+          .categories-courses-dropdown ul li a:hover i {
+            transform: translateX(3px); }
+    /* line 110, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+    .categories-courses-dropdown form {
+      position: relative;
+      width: 354px;
+      margin-left: auto;
+      padding-right: 15px; }
+      /* line 115, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+      .categories-courses-dropdown form input {
+        height: 50px;
+        padding-right: 40px !important; }
+      /* line 119, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+      .categories-courses-dropdown form button[type="submit"] {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 50px;
+        line-height: 50px;
+        right: 20px;
+        color: #0050b4;
+        font-size: 17px;
+        border: 0;
+        background-color: transparent; }
+
+@media (max-width: 1590px) {
+  /* line 138, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+  .categories-courses .categories-courses-single > a {
+    padding: 28px 20px; }
+    /* line 140, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+    .categories-courses .categories-courses-single > a i {
+      font-size: 25px;
+      margin-right: 5px; } }
+
+@media (max-width: 1400px) {
+  /* line 150, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+  .categories-courses {
+    padding: 0 5px; }
+    /* line 153, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+    .categories-courses .categories-courses-single > a {
+      flex-wrap: wrap;
+      padding: 8px 10px 15px;
+      justify-content: center;
+      font-size: 15px; }
+      /* line 158, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+      .categories-courses .categories-courses-single > a i {
+        display: block;
+        width: 100%;
+        margin: 0 0 5px;
+        text-align: center;
+        font-size: 38px; }
+    /* line 168, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+    .categories-courses .categories-courses-single .categories-courses-dropdown ul li {
+      width: 25%; } }
+
+@media (max-width: 1250px) {
+  /* line 178, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+  .categories-courses {
+    padding: 0 30px;
+    justify-content: space-between; }
+    /* line 182, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+    .categories-courses .categories-courses-single > a {
+      padding: 15px 30px;
+      font-size: 13px; }
+      /* line 185, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+      .categories-courses .categories-courses-single > a span {
+        display: none; } }
+
+@media (max-width: 991px) {
+  /* line 194, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+  .categories-courses {
+    padding: 0 30px; }
+    /* line 197, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+    .categories-courses .categories-courses-single > a {
+      padding: 15px 10px; } }
+
+@media (min-width: 681px) {
+  /* line 205, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+  .stm_lms_categories-courses__toggler {
+    display: none; } }
+
+@media (max-width: 680px) {
+  /* line 212, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+  .stm_lms_categories-courses__toggler {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 53px; }
+  /* line 220, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+  .categories-courses {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 30px !important;
+    width: 350px;
+    background-color: #eef1f7;
+    max-width: 85%;
+    display: none;
+    overflow-y: auto;
+    z-index: 999999999; }
+    /* line 232, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+    .categories-courses.active {
+      display: block; }
+    /* line 236, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+    .categories-courses .categories-courses-single > a {
+      justify-content: flex-start;
+      color: #000 !important;
+      padding: 15px 25px !important;
+      background-color: #fff;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin: 0 0 2px; }
+      /* line 244, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+      .categories-courses .categories-courses-single > a:after {
+        display: none; }
+      /* line 247, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+      .categories-courses .categories-courses-single > a i {
+        display: none; }
+      /* line 250, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+      .categories-courses .categories-courses-single > a span {
+        display: block; }
+    /* line 254, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+    .categories-courses .categories-courses-single .categories-courses-dropdown {
+      display: none;
+      position: static;
+      opacity: 1;
+      visibility: visible;
+      background-color: #0050b4; }
+      /* line 260, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+      .categories-courses .categories-courses-single .categories-courses-dropdown form {
+        margin-top: 30px;
+        padding-left: 15px;
+        width: auto; }
+      /* line 265, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+      .categories-courses .categories-courses-single .categories-courses-dropdown ul {
+        width: 100%; }
+        /* line 267, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+        .categories-courses .categories-courses-single .categories-courses-dropdown ul li {
+          width: 100%; }
+      /* line 271, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+      .categories-courses .categories-courses-single .categories-courses-dropdown:after {
+        display: none; }
+    /* line 276, assets/scss/vc_modules/headers/_categories_megamenu.scss */
+    .categories-courses .categories-courses-single.active .categories-courses-dropdown {
+      display: block; } }
+
+/* line 5, assets/scss/vc_modules/headers/header_4.scss */
+.header_top {
+  display: flex;
+  padding: 40px 0 38px;
+  align-items: center;
+  justify-content: space-between; }
+  /* line 10, assets/scss/vc_modules/headers/header_4.scss */
+  .header_top .header_top_socials {
+    flex: 25% 0 0; }
+    /* line 12, assets/scss/vc_modules/headers/header_4.scss */
+    .header_top .header_top_socials .pull-right {
+      float: none !important; }
+    /* line 15, assets/scss/vc_modules/headers/header_4.scss */
+    .header_top .header_top_socials ul {
+      padding: 0;
+      margin: 0;
+      list-style: none; }
+      /* line 19, assets/scss/vc_modules/headers/header_4.scss */
+      .header_top .header_top_socials ul li {
+        display: inline-block;
+        margin-right: 15px;
+        vertical-align: top; }
+        /* line 23, assets/scss/vc_modules/headers/header_4.scss */
+        .header_top .header_top_socials ul li:last-child {
+          margin-right: 0; }
+        /* line 26, assets/scss/vc_modules/headers/header_4.scss */
+        .header_top .header_top_socials ul li a {
+          font-size: 18px;
+          color: #fff; }
+  /* line 33, assets/scss/vc_modules/headers/header_4.scss */
+  .header_top .logo-unit {
+    flex: 50% 0 0; }
+    /* line 35, assets/scss/vc_modules/headers/header_4.scss */
+    .header_top .logo-unit img {
+      margin: 0 auto; }
+  /* line 39, assets/scss/vc_modules/headers/header_4.scss */
+  .header_top .header_top_phone {
+    flex: 25% 0 0;
+    text-align: right; }
+    /* line 42, assets/scss/vc_modules/headers/header_4.scss */
+    .header_top .header_top_phone .stm_header_4_phone_inner {
+      color: #fff;
+      font-size: 22px; }
+      /* line 45, assets/scss/vc_modules/headers/header_4.scss */
+      .header_top .header_top_phone .stm_header_4_phone_inner i {
+        position: relative;
+        top: 2px;
+        margin-right: 4px; }
+
+/* line 54, assets/scss/vc_modules/headers/header_4.scss */
+.header_bottom {
+  position: relative; }
+  /* line 56, assets/scss/vc_modules/headers/header_4.scss */
+  .header_bottom:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7;
+    border-radius: 10px;
+    z-index: 100; }
+  /* line 68, assets/scss/vc_modules/headers/header_4.scss */
+  .header_bottom .header_main_menu_wrapper {
+    position: relative;
+    padding: 13px 15%;
+    text-align: center;
+    margin: 0;
+    z-index: 200; }
+    /* line 74, assets/scss/vc_modules/headers/header_4.scss */
+    .header_bottom .header_main_menu_wrapper .header-menu {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      /* line 78, assets/scss/vc_modules/headers/header_4.scss */
+      .header_bottom .header_main_menu_wrapper .header-menu li {
+        margin: 0; }
+      /* line 82, assets/scss/vc_modules/headers/header_4.scss */
+      .header_bottom .header_main_menu_wrapper .header-menu > li > a {
+        letter-spacing: 2px;
+        font-weight: 500; }
+      /* line 86, assets/scss/vc_modules/headers/header_4.scss */
+      .header_bottom .header_main_menu_wrapper .header-menu > li > ul.sub-menu {
+        left: -42px;
+        text-align: left; }
+    /* line 92, assets/scss/vc_modules/headers/header_4.scss */
+    .header_bottom .header_main_menu_wrapper .language-switcher-unit {
+      position: absolute;
+      right: 17px;
+      top: 18px; }
+      /* line 96, assets/scss/vc_modules/headers/header_4.scss */
+      .header_bottom .header_main_menu_wrapper .language-switcher-unit .stm_lang {
+        display: inline-block;
+        margin-right: 10px; }
+        /* line 99, assets/scss/vc_modules/headers/header_4.scss */
+        .header_bottom .header_main_menu_wrapper .language-switcher-unit .stm_lang:last-child {
+          margin-right: 0; }
+
+/* line 108, assets/scss/vc_modules/headers/header_4.scss */
+.transparent_header_off .header_default {
+  padding-bottom: 50px; }
+
+/* line 112, assets/scss/vc_modules/headers/header_4.scss */
+.transparent_header_off .header_top .header_top_socials ul li a {
+  color: #333; }
+
+/* line 115, assets/scss/vc_modules/headers/header_4.scss */
+.transparent_header_off .header_top .header_top_phone .stm_header_4_phone_inner {
+  color: #333; }
+
+/* line 120, assets/scss/vc_modules/headers/header_4.scss */
+.transparent_header_off .header_bottom:after {
+  opacity: 1; }
+
+/* line 123, assets/scss/vc_modules/headers/header_4.scss */
+.transparent_header_off .header_bottom .header_main_menu_wrapper .header-menu > li > a {
+  color: #fff; }
+
+@media only screen and (max-width: 991px) {
+  /* line 131, assets/scss/vc_modules/headers/header_4.scss */
+  .header_top .header_top_socials ul li a {
+    color: #333; }
+  /* line 134, assets/scss/vc_modules/headers/header_4.scss */
+  .header_top .header_top_phone .stm_header_4_phone_inner {
+    color: #333; }
+  /* line 138, assets/scss/vc_modules/headers/header_4.scss */
+  .header_bottom .header_main_menu_wrapper {
+    padding-left: 13%;
+    padding-right: 13%; }
+    /* line 141, assets/scss/vc_modules/headers/header_4.scss */
+    .header_bottom .header_main_menu_wrapper .header-menu > li > a {
+      letter-spacing: 0; } }
+
+@media only screen and (max-width: 991px) {
+  /* line 149, assets/scss/vc_modules/headers/header_4.scss */
+  .header_top .header_top_socials,
+  .header_top .header_top_phone,
+  .header_top .logo-unit {
+    flex-basis: 33.33%; } }
+
+@media only screen and (max-width: 768px) {
+  /* line 159, assets/scss/vc_modules/headers/header_4.scss */
+  .header_bottom {
+    display: none; }
+    /* line 161, assets/scss/vc_modules/headers/header_4.scss */
+    .header_bottom.active {
+      display: block; }
+    /* line 164, assets/scss/vc_modules/headers/header_4.scss */
+    .header_bottom .header_main_menu_wrapper {
+      margin: 30px 0 0;
+      padding: 15px 30px; }
+      /* line 167, assets/scss/vc_modules/headers/header_4.scss */
+      .header_bottom .header_main_menu_wrapper .header-menu {
+        display: block;
+        margin-bottom: 20px;
+        text-align: left; }
+        /* line 171, assets/scss/vc_modules/headers/header_4.scss */
+        .header_bottom .header_main_menu_wrapper .header-menu li {
+          display: block;
+          float: none; }
+          /* line 174, assets/scss/vc_modules/headers/header_4.scss */
+          .header_bottom .header_main_menu_wrapper .header-menu li > .stm_lms_menu_toggle {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 40px;
+            height: 48px;
+            z-index: 99999; }
+            /* line 181, assets/scss/vc_modules/headers/header_4.scss */
+            .header_bottom .header_main_menu_wrapper .header-menu li > .stm_lms_menu_toggle:after {
+              content: '';
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              width: 10px;
+              height: 10px;
+              margin: -8px 0 0 -5px;
+              border-bottom: 1px solid #aaa;
+              border-right: 1px solid #aaa;
+              transform: rotate(45deg); }
+          /* line 194, assets/scss/vc_modules/headers/header_4.scss */
+          .header_bottom .header_main_menu_wrapper .header-menu li > ul.sub-menu {
+            position: static !important;
+            display: none;
+            margin: 20px 0;
+            width: 100%;
+            padding-left: 15px !important;
+            padding-top: 15px !important;
+            padding-bottom: 15px !important; }
+            /* line 202, assets/scss/vc_modules/headers/header_4.scss */
+            .header_bottom .header_main_menu_wrapper .header-menu li > ul.sub-menu a {
+              padding: 0; }
+            /* line 205, assets/scss/vc_modules/headers/header_4.scss */
+            .header_bottom .header_main_menu_wrapper .header-menu li > ul.sub-menu .sub-menu {
+              margin: 0;
+              padding: 0; }
+              /* line 208, assets/scss/vc_modules/headers/header_4.scss */
+              .header_bottom .header_main_menu_wrapper .header-menu li > ul.sub-menu .sub-menu li a {
+                color: #333; }
+            /* line 212, assets/scss/vc_modules/headers/header_4.scss */
+            .header_bottom .header_main_menu_wrapper .header-menu li > ul.sub-menu:before,
+            .header_bottom .header_main_menu_wrapper .header-menu li > ul.sub-menu .stm_lms_menu_toggle {
+              display: none; }
+            /* line 216, assets/scss/vc_modules/headers/header_4.scss */
+            .header_bottom .header_main_menu_wrapper .header-menu li > ul.sub-menu.active {
+              display: block;
+              opacity: 1;
+              visibility: visible;
+              box-shadow: none !important; }
+    /* line 226, assets/scss/vc_modules/headers/header_4.scss */
+    .header_bottom .language-switcher-unit {
+      position: static !important;
+      text-align: left; }
+  /* line 231, assets/scss/vc_modules/headers/header_4.scss */
+  .header_top {
+    padding: 30px 0 0;
+    flex-wrap: wrap; }
+    /* line 234, assets/scss/vc_modules/headers/header_4.scss */
+    .header_top .logo-unit {
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      align-items: center;
+      margin: 30px 0 0;
+      order: 100;
+      flex-basis: 100%; }
+      /* line 242, assets/scss/vc_modules/headers/header_4.scss */
+      .header_top .logo-unit .stm_menu_toggler {
+        margin: 0 0 0 auto; }
+        /* line 244, assets/scss/vc_modules/headers/header_4.scss */
+        .header_top .logo-unit .stm_menu_toggler:before {
+          position: relative;
+          top: 1px;
+          content: "\f039";
+          margin-left: 10px;
+          margin-right: 15px;
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900; }
+        /* line 253, assets/scss/vc_modules/headers/header_4.scss */
+        .header_top .logo-unit .stm_menu_toggler:after {
+          content: attr(data-text);
+          font-family: inherit !important; }
+    /* line 259, assets/scss/vc_modules/headers/header_4.scss */
+    .header_top .header_top_socials,
+    .header_top .header_top_phone {
+      flex-basis: 50%; }
+  /* line 264, assets/scss/vc_modules/headers/header_4.scss */
+  .header_top_bar_socs li:nth-child(3) {
+    margin-right: 15px !important; } }

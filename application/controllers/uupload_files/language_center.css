@@ -1,0 +1,243 @@
+/* line 1, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+.vc_tta-tabs.vc_tta-tabs-position-left.vc_tta-color-blue .vc_tta-tabs-container .vc_tta-tabs-list li.vc_tta-tab.vc_active a,
+.vc_tta-tabs.vc_tta-tabs-position-top.vc_tta-color-blue .vc_tta-tabs-container .vc_tta-tabs-list li.vc_tta-tab.vc_active a {
+  background-color: #eee !important; }
+
+/* line 6, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+.vc_tta-tabs.vc_tta-tabs-position-left.vc_tta-color-blue .vc_tta-tabs-container .vc_tta-tabs-list li.vc_tta-tab a {
+  text-align: center !important; }
+
+/* line 10, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+.wpb-js-composer .vc_tta-controls-align-left.vc_tta-tabs.vc_tta-tabs-position-top:not([class*=vc_tta-gap]):not(.vc_tta-o-no-fill) .vc_tta-panels {
+  background-color: transparent !important; }
+
+/* line 14, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+.wpb-js-composer .vc_tta-tabs.vc_tta-tabs-position-left {
+  display: block !important; }
+
+/* line 18, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+.wpb-js-composer .vc_tta-color-blue.vc_tta-style-classic.vc_tta-tabs .vc_tta-panels {
+  background: transparent !important; }
+
+/* line 23, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+.btn span {
+  font-weight: 400; }
+
+/* line 30, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+ul.stm-courses li .star-rating {
+  display: none; }
+
+/* line 33, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+ul.stm-courses li .price ins .amount {
+  font-size: 15px; }
+
+/* line 40, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+body .stm_sign_up_now {
+  height: 100%;
+  padding: 0; }
+  /* line 43, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+  body .stm_sign_up_now .stm_sign_up_now_inner {
+    height: 100%;
+    padding: 70px 35px 30px;
+    box-shadow: 0 11px 29px 0 rgba(0, 0, 0, 0.18); }
+    /* line 48, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+    body .stm_sign_up_now .stm_sign_up_now_inner .wpcf7-form .form-group {
+      margin: 0 0 36px; }
+      /* line 50, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+      body .stm_sign_up_now .stm_sign_up_now_inner .wpcf7-form .form-group h4 {
+        margin: 0 0 14px; }
+      /* line 53, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+      body .stm_sign_up_now .stm_sign_up_now_inner .wpcf7-form .form-group .form-control {
+        background-color: transparent;
+        height: 50px;
+        line-height: 52px;
+        border-radius: 25px;
+        border: 1px solid #ddd;
+        font-size: 14px !important; }
+    /* line 62, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+    body .stm_sign_up_now .stm_sign_up_now_inner .wpcf7-form .btn {
+      margin-top: 13px; }
+    /* line 65, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+    body .stm_sign_up_now .stm_sign_up_now_inner .wpcf7-form .wpcf7-not-valid-tip {
+      margin: 10px 0 0;
+      text-align: left; }
+
+/* line 75, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+.vc_row-o-equal-height .wpb_wrapper {
+  height: 100%; }
+
+/* line 81, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+body .icon_box {
+  padding: 0; }
+  /* line 83, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+  body .icon_box .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    min-height: 70px;
+    margin-right: 16px; }
+  /* line 92, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+  body .icon_box .icon_text p {
+    font-size: 15px;
+    line-height: 26px; }
+  /* line 97, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+  body .icon_box .icon_alignment_left .icon_text h4 {
+    margin: 0 0 24px; }
+  /* line 100, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+  body .icon_box .icon_alignment_left .icon_text h5 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500; }
+
+/* line 110, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+body .teacher-col {
+  text-align: center; }
+  /* line 112, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+  body .teacher-col .multiseparator {
+    margin: 15px 0 !important; }
+    /* line 114, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+    body .teacher-col .multiseparator:before, body .teacher-col .multiseparator:after {
+      display: none; }
+  /* line 119, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+  body .teacher-col .teacher_img {
+    margin: 0 0 26px; }
+  /* line 122, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+  body .teacher-col .title {
+    padding: 0;
+    margin: 0 0 5px !important;
+    color: #333333 !important;
+    font-size: 22px; }
+  /* line 128, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+  body .teacher-col .job {
+    margin-bottom: 19px;
+    font-style: italic;
+    font-size: 14px;
+    color: #555555;
+    opacity: 0.6; }
+  /* line 136, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+  body .teacher-col .content p {
+    font-size: 15px;
+    line-height: 22px; }
+
+/* line 145, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+body .widget_mailchimp .stm_mailchimp_unit .button .h5 {
+  font-size: 14px;
+  font-weight: 500; }
+
+/* line 150, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+body #footer .widget_title h3 {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: none; }
+
+/* line 157, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+body #footer .widget_menus ul,
+body #footer .widget_nav_menu ul {
+  padding: 0;
+  list-style: none; }
+  /* line 161, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+  body #footer .widget_menus ul li a,
+  body #footer .widget_nav_menu ul li a {
+    display: block;
+    margin: 0 0 15px;
+    position: relative;
+    padding-left: 13px;
+    font-size: 15px; }
+    /* line 167, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+    body #footer .widget_menus ul li a:before,
+    body #footer .widget_nav_menu ul li a:before {
+      display: block;
+      position: absolute;
+      top: 9px;
+      left: 0;
+      width: 4px;
+      height: 4px;
+      content: '';
+      background: #7f7f81;
+      border-radius: 50%; }
+
+/* line 182, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+body #footer .socials_widget_wrapper .widget_socials li .front a {
+  background-color: #00aad1 !important;
+  color: #fff !important; }
+
+/* line 186, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+body #footer .socials_widget_wrapper .widget_socials li .back a {
+  background-color: #f6b548 !important;
+  color: #fff !important; }
+
+/* line 190, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+body #footer .widget_pages ul.style_1 li,
+body #footer .widget_nav_menu ul.style_1 li {
+  position: relative; }
+  /* line 193, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+  body #footer .widget_pages ul.style_1 li a:after,
+  body #footer .widget_nav_menu ul.style_1 li a:after {
+    top: 9px !important;
+    margin: 0 !important;
+    background: #fff;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px; }
+
+/* line 205, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+.transparent_header_off .header_default:after {
+  display: none; }
+
+/* line 209, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+.sidebar-area .widget_title h3 {
+  text-transform: none;
+  font-size: 22px;
+  font-weight: 700; }
+
+/* line 215, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+.stm_archive_product_inner_unit .stm_archive_product_inner_unit_centered .stm_featured_product_footer .stm_featured_product_show_more a {
+  padding: 0 10px;
+  line-height: 42px;
+  border-radius: 0; }
+
+/* line 221, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+.entry-header .entry-title h1 {
+  font-size: 50px; }
+
+/* line 226, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+.event-col .event_archive_item > a .event_img {
+  margin: 0 0 20px; }
+
+/* line 229, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+.event-col .event_archive_item > a .title {
+  padding: 0 15px 5px; }
+
+/* line 234, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+.logo-unit span.logo {
+  display: block;
+  margin: 0 auto;
+  color: #333;
+  text-align: center; }
+
+/* line 242, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+.transparent_header .logo-unit span.logo {
+  color: #fff; }
+
+@media only screen and (max-width: 768px) {
+  /* line 248, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+  body .stm_sign_up_now .stm_sign_up_now_inner {
+    padding: 40px 30px !important; } }
+
+@media only screen and (max-width: 500px) {
+  /* line 254, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+  h1, .h1 {
+    font-size: 50px !important;
+    line-height: 1.3 !important; } }
+
+/* line 261, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+body.language_center .teacher_content .teacher_img .expert_socials a {
+  width: 36px;
+  height: 36px;
+  line-height: 36px; }
+
+/* line 266, assets/scss/vc_modules/stm_layout_styles/language_center.scss */
+body.language_center .teacher-col .teacher_img {
+  border-radius: 7px; }
