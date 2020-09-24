@@ -31,9 +31,9 @@
 	</div>
     <div class="col m6">
         <div class="card-panel teal darken-2 white-text">
-            <h6><b>Identitas Ahli Media</b></h6><hr>
+            <h6><b>Alamat Ahli Media</b></h6><hr>
             <p>
-                Jl. Ki Ageng Gribig Gang Kaserin MU no.36 - Lesanpuro, Kedungkandang, Kota Malang
+                Jl. Raya Ki Ageng Gribig Gg. Kaserin M U No.37B, Lesanpuro, Kec. Kedungkandang, Kota Malang, Jawa Timur 65138
             </p>
         </div>
     </div>
