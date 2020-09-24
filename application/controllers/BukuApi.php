@@ -15,13 +15,12 @@ class BukuApi extends CI_Controller{
     public function insert_daftar_buku()
     {
     	 $data['id'] = $this->input->post('id');
-        $data['nama_file'] = $this->input->post('nama_file');
-        $data['dokumen'] = $this->input->post('dokumen');
-        $data['judul_buku'] = $this->input->post('judul_buku');
-        $data['kategori_buku'] = $this->input->post('kategori_buku');
-        $data['pengarang_buku'] = $this->input->post('pengarang_buku');
-        $data['penerbit_buku'] = $this->input->post('penerbit_buku');
-        $data['jumlah_halaman'] = $this->input->post('jumlah_halaman');
+        $data['id_kategori'] = $this->input->post('id_kategori');
+        $data['judul'] = $this->input->post('judul');
+        $data['penulis'] = $this->input->post('penulis');
+        $data['sinopsis'] = $this->input->post('sinopsis');
+        $data['no_hp'] = $this->input->post('no_hp');
+        $data['gambar'] = $this->input->post('gambar');
 
         $response = $this->M_android->inset->insert_daftar_buku($data);
 

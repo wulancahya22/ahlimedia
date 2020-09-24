@@ -17,9 +17,9 @@ class Auth extends CI_Controller
     
       $Username = $this->input->post('Username');
       $Password = $this->input->post('Password');
-      $q = $this->db->query("SELECT * FROM daftar_user WHERE Username='$Username' AND Password='$Password'");
+      $q = $this->db->query("SELECT * FROM tb_user WHERE Username='$Username' AND Password='$Password'");
       if ($q->num_rows() > 0) {
-        $d = $this->db->get_where('daftar_user',array('Username'=>$Username, 'Password' => $Password))->row();
+        $d = $this->db->get_where('tb_user',array('Username'=>$Username, 'Password' => $Password))->row();
         $nama = $q->row()->Username;
         $this->session->set_userdata('Username',$nama);
         if($d->id_akses == '1'){
