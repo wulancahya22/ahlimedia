@@ -58,26 +58,26 @@
 
     <div class="row">
         <div class="col-md-12">
-          <h1 style="font-size: 20px">Data Kategori</h1>
+          <h1 style="font-size: 20px">Data Kategori Buku</h1>
           <table class="table table-stripped">
             <thead>
               <tr>
                 
-                <th scope="col">Nomor</th>
-                <th scope="col">Level</th>
-                <th scope="col">kategori</th>
-                <th scope="col" width="200px">Action</th>
+                <th scope="col">ID</th>
+                <th scope="col">Kategori</th>
+                <th scope="col">Aksi</th>
+              
               </tr>
             </thead>
             <tbody>
               <?php foreach ($ktg as $ktg) :?>
                 <tr>
-                <td><?= $ktg['id'];?></td>
+                
                 <td><?= $ktg['id_kategori'];?></td>
-                  <td><?= $ktg['kategori'];?></td>
+                  <td><?= $ktg['nama_kategori'];?></td>
                   <td>
-                    <a href="<?= base_url(); ?>kategori/edit/<?= $ktg['id']; ?>" class="badge badge-primary badge-pill tampilModalUbah">Edit</a>
-                    <a href="<?= base_url(); ?>kategori/hapus/<?= $ktg['id']; ?>" class="badge badge-danger badge-pill" onclick="return confirm('Hapus data?');">Hapus</a>
+                    <a href="<?= base_url(); ?>kategori/edit/<?= $ktg['id_kategori']; ?>" class="badge badge-primary badge-pill tampilModalUbah">Edit</a>
+                    <a href="<?= base_url(); ?>kategori/hapus/<?= $ktg['id_kategori']; ?>" class="badge badge-danger badge-pill" onclick="return confirm('Hapus data?');">Hapus</a>
                   </td>
                 </tr>
               <?php endforeach; ?>

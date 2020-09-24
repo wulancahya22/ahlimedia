@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('assets2/img/logo.png'); ?>">
-    <title>Login Ahli Media</title>
+    <title>Ahli Media</title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <style>
  

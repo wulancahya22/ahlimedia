@@ -17,17 +17,17 @@ class Kategori extends CI_Controller{
     public function edit($id){
 
 
-        $data['title'] = 'Edit Data Mahasiswa';
+        $data['title'] = 'Edit Data';
         $data['ktg'] = $this->kategori_m->getAllKategoriById($id);
         $this->form_validation->set_rules('id_kategori', 'id_kategori', 'required');
-        $this->form_validation->set_rules('kategori', 'kategori', 'required');
+        $this->form_validation->set_rules('tb_kategori', 'tb_kategori', 'required');
         
         if( $this->form_validation->run() == FALSE ){
             $this->load->view('system_view/kategori/U_kategori', $data);
         } else{
             $this->kategori_m->editKategori();
             $this->session->set_flashdata('msg', 'Diubah');
-            redirect('kategori');
+            redirect('tb_kategori');
         }
     }
 
@@ -35,6 +35,6 @@ class Kategori extends CI_Controller{
 
         $this->kategori_m->hapusKategori($id);
         $this->session->set_flashdata('msg', 'Dihapus');
-        redirect('kategori');
+        redirect('tb_kategori');
     }
 }

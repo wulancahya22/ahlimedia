@@ -43,12 +43,9 @@ class Upload extends CI_Controller {
                 $gambar = $this->upload->data();
                 $data = array(
                   'nama_file' =>$gambar['file_name'],
-                  'dokumen' =>$gambar['file_name'],
-                  'judul_buku' =>$this->input->post('judul_buku'),
-                  'kategori_buku' =>$this->input->post('kategori_buku'),
-                  'pengarang_buku' =>$this->input->post('pengarang_buku'),
-                  'penerbit_buku' =>$this->input->post('penerbit_buku'),
-                  'jumlah_halaman' =>$this->input->post('jumlah_halaman')
+                  'judul' =>$this->input->post('judul'),
+                  'kategori' =>$this->input->post('kategori'),
+                  'sinopsis' =>$this->input->post('sinopsis'),
                 );
 
                 $this->model_upldgbr->get_insert2($data); //akses model untuk menyimpan ke database
@@ -78,11 +75,9 @@ public function edit($id)
 public function updatedata()
 {
     $id   = $this->input->post('id');
-    $judul_buku = $this->input->post('judul_buku');
-    $kategori_buku = $this->input->post('kategori_buku');
-    $pengarang_buku = $this->input->post('pengarang_buku');
-    $penerbit_buku = $this->input->post('penerbit_buku');
-    $jumlah_halaman = $this->input->post('jumlah_halaman');
+    $judul = $this->input->post('judul');
+    $penulis = $this->input->post('penulis');
+    $sinopsis = $this->input->post('sinopsis');
 
     $path = './uploads/';
 
@@ -105,11 +100,9 @@ public function updatedata()
               $data = array(
                             'nama_file'        => $gambar['file_name'],
                             'dokumen'          => $gambar['file_name'],
-                            'judul_buku'       => $judul_buku,
-                            'kategori_buku'    => $kategori_buku,
-                            'pengarang_buku'   => $pengarang_buku,
-                            'penerbit_buku'    => $penerbit_buku,
-                            'jumlah_halaman'   => $jumlah_halaman,
+                            'judul'            => $judul,
+                            'penulis'          => $penulis,
+                            'sinopsis'         => $sinopsis,
                           );
             // hapus foto pada direktori
             @unlink($path.$this->input->post('filelama'));

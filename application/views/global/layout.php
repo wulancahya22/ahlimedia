@@ -42,7 +42,7 @@
 
 
             <nav class="brown">
-            	<a href="<?php echo base_url();?>Buku"   class="brand-logo" ><img src="<?php echo base_url(); ?>assets2/img/a.png" style="height: 70px; width: 70px; border-radius: 90%;" alt="" ></a>
+            	<a href="<?php echo base_url();?>Buku"   class="brand-logo" ><img src="<?php echo base_url(); ?>assets2/img/a.png" style="height: 75px; width: 80px; border-radius: 90%;" alt="" ></a>
                 <div class="container">
                   <div class="dropdown">
                   	<div class="nav-wrapper">

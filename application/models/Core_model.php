@@ -3,7 +3,7 @@
 class Core_model extends CI_Model{
     public function create($data)
 	{
-		return $this->db->insert('daftar_buku', $data);
+		return $this->db->insert('tb_buku', $data);
 	}
     function remove($coloumn,$where,$table){
         $this->db->where($coloumn,$where);
@@ -12,7 +12,7 @@ class Core_model extends CI_Model{
     function edit($data,$coloumn,$where,$table){
         $this->db->set($data);
         $this->db->where($coloumn,$where);
-        return $this->db->update($table['daftar_buku']);
+        return $this->db->update($table['tb_buku']);
     }
     function read($coloumnandwhere,$table){
         // jika tidak ada maka NULL, NULL

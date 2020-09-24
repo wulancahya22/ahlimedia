@@ -3,7 +3,7 @@
 class Dash extends CI_Controller {
 
 public function index(){
-		$data['title']='Home Perpustakaan';
+		$data['title']='Home AhliMedia';
 		$tmp['content']=$this->load->view('system_view/dashboard',$data, TRUE);
 		$this->load->view('system_view/dashboard');
     }

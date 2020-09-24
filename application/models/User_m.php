@@ -5,7 +5,7 @@ class User_m extends CI_Model{
     public function login($post)
     {
         $this->db->select('*');
-        $this->db->from('daftar_user');
+        $this->db->from('tb_user');
         $this->db->where('username', $post['username']);
         $this->db->where('password', $post['password']);
         $query = $this->db->get();
@@ -13,9 +13,9 @@ class User_m extends CI_Model{
     }
     public function get($id = null)
     {
-        $this->db->from('daftar_user');
+        $this->db->from('tbr_user');
         if($id != null) {
-            $this->db->where('user_id', $id);
+            $this->db->where('id', $id);
         }
         $query = $this->db->get();
         return $query;
@@ -28,7 +28,7 @@ class User_m extends CI_Model{
         $params['Password'] = $post['password'];
         $params['id_akses'] = $post['id_akses'];
 
-        $this->db->insert('daftar_user', $params);
+        $this->db->insert('tb_user', $params);
     }
 
     public function edit($post)
@@ -37,15 +37,15 @@ class User_m extends CI_Model{
         $params['Username'] = $post['username'];
         $params['Password'] = $post['password'];
         $params['id_akses'] = $post['id_akses'];
-        $this->db->where('user_id', $post['user_id']);
-        $this->db->update('daftar_user', $params);
+        $this->db->where('id', $post['id']);
+        $this->db->update('tb_user', $params);
     }
 
 
     public function del($id)
     {
-        $this->db->where('user_id', $id);
-        $this->db->delete('daftar_user');
+        $this->db->where('id', $id);
+        $this->db->delete('tb_user');
     }
 
 }

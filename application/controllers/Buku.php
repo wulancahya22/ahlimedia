@@ -11,7 +11,7 @@ class Buku extends CI_Controller {
 
 	public function index(){
 
-		$data['title']='Home Perpustakaan';
+		$data['title']='Home AhliMedia';
 		$tmp['content']=$this->load->view('global/home', $data,TRUE);
 		$this->load->view('global/layout',$tmp);
 		

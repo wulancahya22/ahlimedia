@@ -11,7 +11,7 @@
 }
 </script>
 <head>
-    <title>MaBook</title>
+    <title>Ahli Media</title>
     
     <link href="<?=base_url()?>assets/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap core CSS -->
     <link href="<?=base_url()?>assets/css/style.css" rel="stylesheet"> <!-- Custom styles for this template -->
@@ -48,24 +48,11 @@
             </div>
             </td>
          </tr>
-         <tr>
-          <td style="width:15%;">File Dokumen</td>
-          <td>
-            <div class="col-sm-10">
-            <input type="file" name="filedokumen"><br><br>
-
-          <!-- file lama -->
-          <input type="hidden" name="filelama" value="<?=$data->dokumen?>" required>
-            <!-- ID -->
-          <input type="hidden" name="id" value="<?=$data->id?>" required>
-            </div>
-            </td>
-         </tr>
         <tr>
           <td style="width:15%;">Judul</td>
           <td>
             <div class="col-sm-10">
-            <input type="text" name="judul_buku" value="<?=$data->judul_buku?>" class="form-control" >
+            <input type="text" name="judul" value="<?=$data->judul?>" class="form-control" >
             </div>
             </td>
          </tr>
@@ -73,38 +60,20 @@
           <td style="width:15%;">Kategori</td>
           <td>
             <div class="col-sm-10">
-            <select name="kategori_buku" class="form-control">
+            <select name="kategori" class="form-control">
               <option value="">- Pilih -</option>
-              <option value="1" <?='kategori_buku' == 1 ? "selected" : null?>>IPA</option>
-              <option value="2" <?='kategori_buku'== 2 ? "selected" : null?>>IPS</option>
-              <option value="3" <?='kategori_buku' == 3 ? "selected" : null?>>BAHASA INDONESIA</option>
-              <option value="4" <?='kategori_buku'== 4 ? "selected" : null?>>LAINNYA</option>
-              <option value="5" <?='kategori_buku'== 5 ? "selected" : null?>>BUKU UJIAN</option>
+              <option value="1" <?='kategori_buku' == 1 ? "selected" : null?>>Anak</option>
+              <option value="2" <?='kategori_buku'== 2 ? "selected" : null?>>Dewasa</option>
+              <option value="3" <?='kategori_buku' == 3 ? "selected" : null?>>Karya Ilmiah</option>
             </select>
           </div>
         </td>
       </tr>
          <tr>
-          <td style="width:15%;">Pengarang</td>
+          <td style="width:15%;">Penulis</td>
           <td>
             <div class="col-sm-10">
-                <input name="pengarang_buku" value="<?=$data->pengarang_buku?>" class="form-control">
-            </div>
-            </td>
-         </tr>
-         <tr>
-          <td style="width:15%;">Penerbit</td>
-          <td>
-            <div class="col-sm-10">
-                <input name="penerbit_buku" value="<?=$data->penerbit_buku?>" class="form-control">
-            </div>
-            </td>
-         </tr>
-         <tr>
-          <td style="width:15%;">Halaman</td>
-          <td>
-            <div class="col-sm-10">
-                <input name="jumlah_halaman" value="<?=$data->jumlah_halaman?>" class="form-control">
+                <input name="penulis" value="<?=$data->penulis?>" class="form-control">
             </div>
             </td>
          </tr>

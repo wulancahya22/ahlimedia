@@ -1,5 +1,5 @@
 <div class="wrapper">
-    <div class="sidebar" data-color="purple" data-image="<?php echo base_url('assets/img/sidebar-6.jpg'); ?>">
+    <div class="sidebar" data-color="black" data-image="<?php echo base_url('assets/img/sidebar-6.jpg'); ?>">
 
     <!--
 
@@ -22,12 +22,7 @@
                         <p>Dashboard</p>
                     </a>
                 </li>
-                <li>
-                    <a href="<?php echo site_url('user'); ?>">
-                        <i class="pe-7s-user"></i>
-                        <p>User</p>
-                    </a>
-                </li>
+                 
                 <li>
                     <a href="<?php echo site_url('upload'); ?>">
                         <i class="pe-7s-notebook"></i>

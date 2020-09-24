@@ -1,7 +1,7 @@
 <div class="row">
 	<div class="col m 12">
 		<center>
-			<h5>Selamat Datang di AhliMedia</h5>
+			<h2>Selamat Datang di Ahlimedia.com</h2>
 		</center><hr>
 	</div>
 

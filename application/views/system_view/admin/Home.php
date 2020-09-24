@@ -1,5 +1,5 @@
 <head>
-    <title>MaBook</title>
+    <title>Ahli Media</title>
     
     <link href="<?=base_url()?>assets/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap core CSS -->
     <link href="<?=base_url()?>assets/css/style.css" rel="stylesheet"> <!-- Custom styles for this template -->
@@ -59,14 +59,12 @@
                                                 <tr>
                                                 <th>No</th>
       
-                                                <th>Gambar File</th>
+                                                <th>Gambar </th>
  
-                                                <th>Judul Buku</th>
-                                                <th>Kategori</th>
-                                                <th>Pengarang Buku</th>
-                                                <th>Penerbit Buku</th>
-                                                <th>Jumlah Halaman</th>
-                                                <th>Aksi</th>
+                                                <th>Judul </th>
+                                                <th>Penulis</th>
+                                                <th>Sinopsis</th>
+                                                 
                                                 </tr>
                                                 <?php $no = 1;
                                             foreach($query as $key => $data) { ?>
@@ -75,16 +73,14 @@
                                               
                                                 <td><img src="<?=base_url()?>uploads/<?=$data->nama_file;?>" width="80px" height="100px"></td>
    
-                                                <td><?=$data->judul_buku?></td>
-                                                <td><?=$data->kategori_buku?></td>
-                                                <td><?=$data->pengarang_buku?></td>
-                                                <td><?=$data->penerbit_buku?></td>
-                                                <td><?=$data->jumlah_halaman?></td>
+                                                <td><?=$data->judul?></td>
+                                                <td><?=$data->penulis?></td>
+                                                <td><?=$data->sinopsis?></td>
                                                 <td class="text-center" width="160px">
                                                 <!--aksi-->
-                                                <a href="<?=site_url('upload/edit/'.$data->id)?>" class="btn btn-primary btn-xs">
+                                                <a href="<?=site_url('upload/edit/'.$data->id_buku)?>" class="btn btn-primary btn-xs">
                                                         <i class="pe-7s-edit"></i> Update</a>
-                                                    <a href="<?=site_url()?>upload/deletedata/<?=$data->id?>/<?=$data->nama_file?>" class="btn btn-danger">
+                                                    <a href="<?=site_url()?>upload/deletedata/<?=$data->id_buku?>/<?=$data->id_buku?>" class="btn btn-danger">
                                                         <i class="pe-7s-shield"></i> Delete</a>
                                                     </button>
                                                 </form>

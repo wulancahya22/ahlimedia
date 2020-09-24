@@ -10,7 +10,7 @@ class Web extends CI_Controller {
 		$this->load->model('Perpus_model');
 	}
 	public function index(){
-		$data['title']='Home Perpustakaan';
+		$data['title']='Home Ahli Media';
 		$tmp['content']=$this->load->view('global/home',$data, TRUE);
 		$this->load->view('global/layout',$tmp);
 	}
