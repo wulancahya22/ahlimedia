@@ -73,6 +73,14 @@
             </div>
             </td>
          </tr>
+          <tr>
+          <td style="width:15%;">Sinopsis</td>
+          <td>
+            <div class="col-sm-10">
+                <textarea name="sinopsis" class="form-control"></textarea>
+            </div>
+            </td>
+         </tr>
          <tr>
           <td colspan="2">
             <input type="submit" onclick="return insert_confirm()" class="btn btn-success" value="Simpan">
