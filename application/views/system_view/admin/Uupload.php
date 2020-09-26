@@ -39,7 +39,7 @@
           <td style="width:15%;">File Foto</td>
           <td>
             <div class="col-sm-10">
-            <input type="file" name="gambar"><br><br>
+            <input type="file" name="filefoto"><br><br>
 
           <!-- file lama -->
           <input type="hidden" name="filelama" value="<?=$data->gambar?>" required>

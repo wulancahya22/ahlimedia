@@ -40,7 +40,7 @@
           <td style="width:15%;">File Foto</td>
           <td>
             <div class="col-sm-6">
-                <input type="file" name="gambar" class="form-control">
+                <input type="file" name="filefoto" class="form-control">
             </div>
             </td>
          </tr>

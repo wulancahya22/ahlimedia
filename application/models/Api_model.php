@@ -10,7 +10,7 @@ class Api_model extends CI_Model
 	function loginApi($Username, $Password)
 	{
 		$this->db->select('*');
-		$this->db->from('tb_user');
+		$this->db->from('daftar_user');
 		$this->db->where('Username', $Username);
 		$this->db->where('Password', $Password);
 		$query = $this->db->get();
@@ -20,8 +20,8 @@ class Api_model extends CI_Model
 	function getAllApi()
 	{
 		$this->db->select('*');
-		$this->db->from('tb_user');
-		$this->db->join('tb_akses', 'user.id_akses = tb_akses.id_akses');
+		$this->db->from('daftar_user');
+		$this->db->join('akses', 'user.id_akses = akses.id_akses');
 		$query = $this->db->get();
 		return $query;
 	}
