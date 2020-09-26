@@ -42,7 +42,7 @@
             <input type="file" name="filefoto"><br><br>
 
           <!-- file lama -->
-          <input type="hidden" name="filelama" value="<?=$data->nama_file?>" required>
+          <input type="hidden" name="filelama" value="<?=$data->gambar?>" required>
             <!-- ID -->
           <input type="hidden" name="id" value="<?=$data->id?>" required>
             </div>
@@ -74,6 +74,14 @@
           <td>
             <div class="col-sm-10">
                 <input name="penulis" value="<?=$data->penulis?>" class="form-control">
+            </div>
+            </td>
+         </tr>
+          <tr>
+          <td style="width:15%;">Sinopsis</td>
+          <td>
+            <div class="col-sm-10">
+                <input name="Sinopsis" value="<?=$data->penulis?>" class="form-control">
             </div>
             </td>
          </tr>
