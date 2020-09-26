@@ -47,10 +47,7 @@
                             <div class="card card-plain table-plain-bg">
                                 <div class="card-header ">
                                     <h4 class="card-title">Data-Data Buku</h4>
-                                    <div class="pull-right">
-                                        <a href="<?=site_url('upload/add')?>" clas="btn btn-primary btn-flat">
-                                            <i class="fa fa-user-plus"></i>Create
-                                        </a>
+                                     
                                     </div>
                                     <p class="card-category"></p>
                                 </div>
@@ -64,7 +61,7 @@
                                                 <th>Judul </th>
                                                 <th>Penulis</th>
                                                 <th>Sinopsis</th>
-                                                 
+                                                <th>Aksi</th>
                                                 </tr>
                                                 <?php $no = 1;
                                             foreach($query as $key => $data) { ?>

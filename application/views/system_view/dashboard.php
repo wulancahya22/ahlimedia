@@ -228,7 +228,7 @@
 
         	$.notify({
             	icon: 'pe-7s-user',
-            	message: "Selamat datang <?php echo $this->session->userdata('Username') ?>, anda berhasil login sebagai admin<b>."
+            	message: "Selamat datang <?php echo $this->session->userdata('nama') ?>, anda berhasil login sebagai admin<b>."
 
             },{
                 type: 'info',
