@@ -50,11 +50,7 @@
                             <div class="card card-plain table-plain-bg">
                                 <div class="card-header ">
                                     <h4 class="card-title">Data-Data User</h4>
-                                    <div class="pull-right">
-                                        <a href="<?=site_url('user/add')?>" clas="btn btn-primary btn-flat">
-                                            <i class="fa fa-user-plus"></i>Create
-                                        </a>
-                                    </div>
+                                     
                                     <p class="card-category"></p>
                                 </div>
                                 <div class="card-body table-full-width table-responsive">
