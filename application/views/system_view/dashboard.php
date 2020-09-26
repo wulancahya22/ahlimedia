@@ -39,7 +39,7 @@
     <?php $this->load->view('page/navbar'); ?>
  
     
-<div class="wrapper">
+<!-- <div class="wrapper">
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
@@ -61,14 +61,14 @@
                                     </div>
                                     <hr>
                                     <div class="stats">
-                                        <!-- <i class="fa fa-clock-o"></i> Campaign sent 2 days ago -->
+                                       <i class="fa fa-clock-o"></i> Campaign sent 2 days ago 
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
 
-                    <div class="col-md-8">
+                    <!-- <div class="col-md-8">
                         <div class="card">
                             <div class="header">
                                 <h4 class="title">Data Peminjaman</h4>
@@ -117,7 +117,7 @@
                             </div>
                         </div>
                     </div>
-
+ -->
                     
                 </div>
             </div>

@@ -250,7 +250,7 @@ $(document).ready(function() {
 
 <!-- SlimScroll -->
 <!-- script src="<?php echo base_url(); ?>assets/plugins/plugins/slimScroll/jquery.slimscroll.min.js"></script>
-<!-- FastClick -->
+  FastClick -->
 <!-- <script src="<?php echo base_url(); ?>assets/plugins/plugins/fastclick/fastclick.js"></script> -->
 </body>
 </html>
