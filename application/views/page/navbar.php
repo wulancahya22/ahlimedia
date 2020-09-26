@@ -44,8 +44,8 @@
                     </ul>
                     
                     <ul class="nav navbar-nav navbar-right">
-                    <?php if($this->session->userdata('Username')) { ?>
-                    <i class="pe-7s-users" style="font-size:25px"><p><?=$this->session->userdata('Username')?> </p></i>
+                    <?php if($this->session->userdata('nama')) { ?>
+                    <i class="pe-7s-users" style="font-size:25px"><p><?=$this->session->userdata('nama')?> </p></i>
                     </ul>
                     <?php } ?>
                 </div>
