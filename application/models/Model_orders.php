@@ -13,7 +13,7 @@ class Model_orders extends CI_Model {
     
     function cekorder($id){
         $this->db->where("id",$id);
-        return $this->db->get("daftar_buku");
+        return $this->db->get("tb_buku");
     }
     
     function jumlahorder(){

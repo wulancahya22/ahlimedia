@@ -71,7 +71,7 @@
                                             <tr>
                                                 <td><?=$no++?></td>
                                               
-                                                <td><img src="<?=base_url()?>uploads/<?=$data->nama_file;?>" width="80px" height="100px"></td>
+                                                <td><img src="<?=base_url()?>uploads/<?=$data->gambar;?>" width="80px" height="100px"></td>
    
                                                 <td><?=$data->judul?></td>
                                                 <td><?=$data->penulis?></td>
