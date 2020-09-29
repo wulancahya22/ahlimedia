@@ -13,7 +13,7 @@ class User_m extends CI_Model{
     }
     public function get($id = null)
     {
-        $this->db->from('tbr_user');
+        $this->db->from('tb_user');
         if($id != null) {
             $this->db->where('id', $id);
         }
@@ -23,9 +23,9 @@ class User_m extends CI_Model{
 
     public function add($post)
     {
-        $params['Nama_lengkap'] = $post['fullname'];
-        $params['Username'] = $post['username'];
-        $params['Password'] = $post['password'];
+        $params['nama'] = $post['nama'];
+        $params['username'] = $post['username'];
+        $params['password'] = $post['password'];
         $params['id_akses'] = $post['id_akses'];
 
         $this->db->insert('tb_user', $params);
@@ -33,9 +33,9 @@ class User_m extends CI_Model{
 
     public function edit($post)
     {
-        $params['Nama_lengkap'] = $post['fullname'];
-        $params['Username'] = $post['username'];
-        $params['Password'] = $post['password'];
+        $params['nama'] = $post['nama'];
+        $params['username'] = $post['username'];
+        $params['password'] = $post['password'];
         $params['id_akses'] = $post['id_akses'];
         $this->db->where('id', $post['id']);
         $this->db->update('tb_user', $params);
