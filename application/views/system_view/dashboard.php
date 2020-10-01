@@ -43,7 +43,7 @@
 <div class="panel panel-default">
   <div class="panel-heading"><b>Form Upload</b></div>
   <div class="panel-body">
-  <?=$this->session->flashdata('pesan')?>
+  <?=$this->session->flashdata('pesan') ?>
      <form action="<?=base_url()?>upload/insert" method="post" enctype="multipart/form-data">
        <table class="table table-striped">
        
@@ -63,19 +63,19 @@
             </div>
             </td>
          </tr>
-         <!-- <tr>
+         <tr>
           <td style="width:15%;">Kategori</td>
           <td>
             <div class="col-sm-10">
             <select name="kategori" class="form-control">
               <option value="">- Pilih -</option>
-              <option value="1" <?=//'kategori' == 1 ? "selected" : null?>>Anak</option>
-              <option value="2" <?=//'kategori'== 2 ? "selected" : null?>>Dewasa</option>
-              <option value="3" <?=//'kategori' == 3 ? "selected" : null?>>Karya Ilmiah</option>
+              <option value="1" <?='kategori' == 1 ? "selected" : null?>>Anak</option>
+              <option value="2" <?='kategori'== 2 ? "selected" : null?>>Dewasa</option>
+              <option value="3" <?='kategori' == 3 ? "selected" : null?>>Karya Ilmiah</option>
             </select>
           </div>
         </td>
-      </tr> -->
+      </tr>
          <tr>
           <td style="width:15%;">Penulis</td>
           <td>
