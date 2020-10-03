@@ -8,7 +8,7 @@
  
 body{
 	font-family: sans-serif;
-	background-image: url('<?php echo base_url(); ?>assets2/img/bg.jpg');
+	background-image: url('<?php echo base_url(); ?>assets2/img/c.jpg');
         background-size: cover;
 }
 
@@ -25,15 +25,15 @@ h1{
 }
 
 .kotak_login{
-	width: 350px;
-	background:    #C0C0C0;
+	width: 250px;
+	background:    white;
 	/*meletakkan form ke tengah*/
-	margin: 80px auto;
+	margin: 120px auto;
 	padding: 30px 20px;
 }
 
 label{
-	font-size: 11pt;
+	font-size: 12pt;
 }
 
 .form_login{
@@ -51,7 +51,7 @@ label{
 	font-size: 11pt;
 	width: 100%;
 	border: none;
-	border-radius: 3px;
+	border-radius: 2px;
 	padding: 10px 20px;
 }
 
@@ -64,7 +64,7 @@ label{
 </head>
   <body>
 
-	<h1 style="font-family: CocogooseNarrows">Selamat Datang di Perpustakaan Ahli Media <br/></h1>
+	<!-- <h1 style="font-family: Cooper Black">Library Ahli Media<br/></h1> -->
 
 	<div class="kotak_login" style="font-family: streetslab">
 		<p class="tulisan_login">Silahkan login</p>
