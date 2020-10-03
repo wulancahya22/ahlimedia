@@ -42,9 +42,9 @@
             <input type="file" name="filefoto"><br><br>
 
           <!-- file lama -->
-          <input type="hidden" name="filelama" value="<?=$data->gambar?>" required>
+          <input type="hidden" name="filelama" value="<?=$data->dokumen?>" required>
             <!-- ID -->
-          <input type="hidden" name="id" value="<?=$data->id?>" required>
+          <input type="hidden" name="id" value="<?=$data->id_buku?>" required>
             </div>
             </td>
          </tr>

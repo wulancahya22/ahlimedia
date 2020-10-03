@@ -66,7 +66,7 @@ class Upload extends CI_Controller {
 // edit
 public function edit($id)
 {
-    $kondisi = array('id' => $id );
+    $kondisi = array('id_buku' => $id );
 
     $data['data'] = $this->model_upldgbr->get_by_id($kondisi);
     return $this->load->view('system_view/admin/Uupload',$data);
@@ -83,7 +83,7 @@ public function updatedata()
 
     $path = './uploads/';
 
-    $kondisi = array('id' => $id );
+    $kondisi = array('id_buku' => $id_buku );
 
     // get foto
     $nama_file = "file_".time();
@@ -124,7 +124,7 @@ public function deletedata($id,$gambar)
     $path = './uploads/';
     @unlink($path.$gambar);
 
-    $where = array('id' => $id );
+    $where = array('id_buku' => $id );
     $this->model_upldgbr->delete($where);
     return redirect('upload');
 }
