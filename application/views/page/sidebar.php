@@ -1,5 +1,5 @@
 <div class="wrapper">
-    <div class="sidebar" data-color="black" data-image="<?php echo base_url('assets/img/sidebar-6.jpg'); ?>">
+    <div class="sidebar" data-color="black" data-image="<?php echo base_url('assets/img/sidebar-2.jpg'); ?>">
 
     	<div class="sidebar-wrapper">
             <div class="logo">
@@ -22,12 +22,12 @@
                         <p>BUKU</p>
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="<?php echo site_url('kategori'); ?>">
                         <i class="pe-7s-note2"></i>
                         <p>KATEGORI</p>
                     </a>
-                </li>
+                </li> -->
             </ul>
     	</div>
     </div>
