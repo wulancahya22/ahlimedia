@@ -8,7 +8,7 @@
  
 body{
 	font-family: sans-serif;
-	background-image: url('<?php echo base_url(); ?>assets2/img/c.jpg');
+	background-image: url('<?php echo base_url(); ?>assets2/img/q.jpg');
         background-size: cover;
 }
 
