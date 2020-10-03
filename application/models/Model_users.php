@@ -10,8 +10,8 @@ class Model_users extends CI_Model{
   }
   function proseslogin($Username, $Password)
   {
-    $this->db->where('Username',$Username);
-    $this->db->where('Password',$Password);
+    $this->db->where('username',$username);
+    $this->db->where('password',$password);
     return $this->db->get('tb_user')->row();
   }
 

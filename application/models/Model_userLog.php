@@ -11,8 +11,8 @@ class Model_userLog extends CI_Model{
     function login($Username,$Password,$table){
 		$this->db->select('*');
 		$this->db->from('tb_user');
-		$this->db->where('Username',$Username);
-		$this->db->where('Password',$Password);
+		$this->db->where('username',$username);
+		$this->db->where('password',$password);
 		$query = $this->db->get();
 		return $query;
 	}

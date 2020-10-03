@@ -43,7 +43,7 @@
 <div class="panel panel-default">
   <div class="panel-heading"><b>Form Upload</b></div>
   <div class="panel-body">
-  <?=$this->session->flashdata('pesan')?>
+  <?=$this->session->flashdata('pesan') ?>
      <form action="<?=base_url()?>upload/insert" method="post" enctype="multipart/form-data">
        <table class="table table-striped">
        

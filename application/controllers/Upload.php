@@ -36,7 +36,7 @@ class Upload extends CI_Controller {
 
         $this->upload->initialize($config);
         
-        if($_FILES['filefoto']['name'])
+        if($_FILES['filefoto']['name']);
         {
             if ($this->upload->do_upload('filefoto'))
             {
@@ -45,7 +45,7 @@ class Upload extends CI_Controller {
                   'nama_file' =>$gambar['file_name'],
                   'judul' =>$this->input->post('judul'),
                   'kategori' =>$this->input->post('kategori'),
-                  'sinopsis' =>$this->input->post('sinopsis'),
+                  'sinopsis' =>$this->input->post('sinopsis') 
                 );
 
                 $this->model_upldgbr->get_insert2($data); //akses model untuk menyimpan ke database
@@ -102,7 +102,7 @@ public function updatedata()
                             'dokumen'          => $gambar['file_name'],
                             'judul'            => $judul,
                             'penulis'          => $penulis,
-                            'sinopsis'         => $sinopsis,
+                            'sinopsis'         => $sinopsis 
                           );
             // hapus foto pada direktori
             @unlink($path.$this->input->post('filelama'));
@@ -128,4 +128,3 @@ public function deletedata($id,$gambar)
 }
 
 } // end class
-
