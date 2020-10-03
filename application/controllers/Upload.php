@@ -45,6 +45,7 @@ class Upload extends CI_Controller {
                   'nama_file' =>$gambar['file_name'],
                   'judul' =>$this->input->post('judul'),
                   'kategori' =>$this->input->post('kategori'),
+                  'penulis' =>$this->input->post('penulis'),
                   'sinopsis' =>$this->input->post('sinopsis') 
                 );
 
@@ -74,9 +75,10 @@ public function edit($id)
 // update
 public function updatedata()
 {
-    $id   = $this->input->post('id');
+    $id_buku   = $this->input->post('id_buku');
     $judul = $this->input->post('judul');
     $penulis = $this->input->post('penulis');
+    $kategori = $this->input->post('kategori');
     $sinopsis = $this->input->post('sinopsis');
 
     $path = './uploads/';

@@ -81,7 +81,7 @@
           <td style="width:15%;">Sinopsis</td>
           <td>
             <div class="col-sm-10">
-                <input name="Sinopsis" value="<?=$data->penulis?>" class="form-control">
+                <input name="sinopsis" value="<?=$data->sinopsis?>" class="form-control">
             </div>
             </td>
          </tr>

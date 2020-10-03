@@ -54,53 +54,53 @@ class Api_model extends CI_Model
 		return $query->result_array();
 	}
 
-	public function getLowonganApi($get, $getkat = 0, $kategori = 0, $idPerusahaan = 0)
-	{
-		$this->db->join('perusahaan', 'lowongan.idPerusahaan = perusahaan.idPerusahaan', 'left');
-		$this->db->join('kategori_pekerjaan kp', 'lowongan.fkKategori = kp.idKategori', 'left');
-		$this->db->where('status', 'buka');
-		$this->db->where('kuota >', 0);
-		if ($get > 0) {
-			$this->db->where('idLowongan', $get);
-		}
-		if ($kategori > 0) {
-			$this->db->where('idLowongan !=', $getkat);
-			$this->db->where('fkKategori', $kategori);
-		}
-		if ($idPerusahaan > 0) {
-			$this->db->where('lowongan.idPerusahaan', $idPerusahaan);
-		}
-		$this->db->order_by('tglPost', 'desc');
-		$query = $this->db->get('lowongan');
+	// public function getLowonganApi($get, $getkat = 0, $kategori = 0, $idPerusahaan = 0)
+	// {
+	// 	$this->db->join('perusahaan', 'lowongan.idPerusahaan = perusahaan.idPerusahaan', 'left');
+	// 	$this->db->join('kategori_pekerjaan kp', 'lowongan.fkKategori = kp.idKategori', 'left');
+	// 	$this->db->where('status', 'buka');
+	// 	$this->db->where('kuota >', 0);
+	// 	if ($get > 0) {
+	// 		$this->db->where('idLowongan', $get);
+	// 	}
+	// 	if ($kategori > 0) {
+	// 		$this->db->where('idLowongan !=', $getkat);
+	// 		$this->db->where('fkKategori', $kategori);
+	// 	}
+	// 	if ($idPerusahaan > 0) {
+	// 		$this->db->where('lowongan.idPerusahaan', $idPerusahaan);
+	// 	}
+	// 	$this->db->order_by('tglPost', 'desc');
+	// 	$query = $this->db->get('lowongan');
 
-		if ($get == 'num') {
-			return $query->num_rows();
-		} else {
-			return $query->result();
-		}
-	}
+	// 	if ($get == 'num') {
+	// 		return $query->num_rows();
+	// 	} else {
+	// 		return $query->result();
+	// 	}
+	// }
 
 	public function getKategoriApi($limit = 6)
 	{
 		return $this->db->get('kategori_pekerjaan', $limit)->result();
 	}
 
-	public function updateKuotaLowongan($idLowongan, $isiBaru, $status)
-	{
-		if ($status == '') {
-			$data = array(
-				'kuota'	=> $isiBaru
-			);
-		} else {
-			$data = array(
-				'kuota'	=> $isiBaru,
-				'status' => $status
-			);
-		}
+	// public function updateKuotaLowongan($idLowongan, $isiBaru, $status)
+	// {
+	// 	if ($status == '') {
+	// 		$data = array(
+	// 			'kuota'	=> $isiBaru
+	// 		);
+	// 	} else {
+	// 		$data = array(
+	// 			'kuota'	=> $isiBaru,
+	// 			'status' => $status
+	// 		);
+	// 	}
 
-		$this->db->where('idLowongan', $idLowongan);
-		$this->db->update('lowongan', $data);
-	}
+	// 	$this->db->where('idLowongan', $idLowongan);
+	// 	$this->db->update('lowongan', $data);
+	// }
 
 	public function uploadCVApi()
 	{
@@ -117,108 +117,108 @@ class Api_model extends CI_Model
 		}
 	}
 
-	public function applyApi($idLowongan, $idMember, $upload)
-	{
-		$data = array(
-			'idMember'		=> $idMember,
-			'idLowongan'	=> $idLowongan,
-			'tglDaftar'		=> date('Y-m-d'),
-			'cv'			=> $upload['file']['file_name'],
-			'statusDaftar'	=> 'baru',
-			'keterangan'	=> 'Belum di verifikasi'
-		);
+	// public function applyApi($idLowongan, $idMember, $upload)
+	// {
+	// 	$data = array(
+	// 		'idMember'		=> $idMember,
+	// 		'idLowongan'	=> $idLowongan,
+	// 		'tglDaftar'		=> date('Y-m-d'),
+	// 		'cv'			=> $upload['file']['file_name'],
+	// 		'statusDaftar'	=> 'baru',
+	// 		'keterangan'	=> 'Belum di verifikasi'
+	// 	);
 
-		$this->db->insert('pendaftar', $data);
-	}
+	// 	$this->db->insert('pendaftar', $data);
+	// }
 
 	public function getPendaftarApi()
 	{
 		return $this->db->get('pendaftar')->result();
 	}
 
-	public function getPendaftarLowonganApi($level, $id)
-	{
-		$this->db->from('pendaftar p');
-		$this->db->join('lowongan l', 'p.idLowongan = l.idLowongan');
-		if ($level == 'member') {
-			$this->db->where('p.idMember', $id);
-		} elseif ($level == 'perusahaan') {
-			$this->db->join('member m', 'p.idMember = m.idMember');
-			$this->db->where('p.idLowongan', $id);
-		} else {
-			$this->db->where('p.idPendaftar', $id);
-		}
+	// public function getPendaftarLowonganApi($level, $id)
+	// {
+	// 	$this->db->from('pendaftar p');
+	// 	$this->db->join('lowongan l', 'p.idLowongan = l.idLowongan');
+	// 	if ($level == 'member') {
+	// 		$this->db->where('p.idMember', $id);
+	// 	} elseif ($level == 'perusahaan') {
+	// 		$this->db->join('member m', 'p.idMember = m.idMember');
+	// 		$this->db->where('p.idLowongan', $id);
+	// 	} else {
+	// 		$this->db->where('p.idPendaftar', $id);
+	// 	}
 
-		return $this->db->get()->result();
-	}
+	// 	return $this->db->get()->result();
+	// }
 
-	public function tambahLowonganApi($idPerusahaan)
-	{
-		$data = array(
-			'lowongan' => $this->input->post('lowongan'),
-			'deskripsi' => $this->input->post('deskripsi'),
-			'persyaratan' => $this->input->post('persyaratan'),
-			'idPerusahaan' => $idPerusahaan,
-			'tglPost' => date('Y-m-d'),
-			'status' => 'buka',
-			'gaji' => $this->input->post('gaji'),
-			'kota' => $this->input->post('kota'),
-			'jamKerja' => $this->input->post('jamKerja'),
-			'kuota' => $this->input->post('kuota'),
-			'fkKategori' => $this->input->post('fkKategori'),
-		);
+	// public function tambahLowonganApi($idPerusahaan)
+	// {
+	// 	$data = array(
+	// 		'lowongan' => $this->input->post('lowongan'),
+	// 		'deskripsi' => $this->input->post('deskripsi'),
+	// 		'persyaratan' => $this->input->post('persyaratan'),
+	// 		'idPerusahaan' => $idPerusahaan,
+	// 		'tglPost' => date('Y-m-d'),
+	// 		'status' => 'buka',
+	// 		'gaji' => $this->input->post('gaji'),
+	// 		'kota' => $this->input->post('kota'),
+	// 		'jamKerja' => $this->input->post('jamKerja'),
+	// 		'kuota' => $this->input->post('kuota'),
+	// 		'fkKategori' => $this->input->post('fkKategori'),
+	// 	);
 
-		$this->db->insert('lowongan', $data);
-	}
+	// 	$this->db->insert('lowongan', $data);
+	// }
 
-	public function updateLowonganApi($id)
-	{
-		$data = array(
-			'lowongan' => $this->input->post('lowongan'),
-			'deskripsi' => $this->input->post('deskripsi'),
-			'persyaratan' => $this->input->post('persyaratan'),
-			'gaji' => $this->input->post('gaji'),
-			'kota' => $this->input->post('kota'),
-			'jamKerja' => $this->input->post('jamKerja'),
-			'kuota' => $this->input->post('kuota'),
-			'fkKategori' => $this->input->post('fkKategori'),
-		);
+	// public function updateLowonganApi($id)
+	// {
+	// 	$data = array(
+	// 		'lowongan' => $this->input->post('lowongan'),
+	// 		'deskripsi' => $this->input->post('deskripsi'),
+	// 		'persyaratan' => $this->input->post('persyaratan'),
+	// 		'gaji' => $this->input->post('gaji'),
+	// 		'kota' => $this->input->post('kota'),
+	// 		'jamKerja' => $this->input->post('jamKerja'),
+	// 		'kuota' => $this->input->post('kuota'),
+	// 		'fkKategori' => $this->input->post('fkKategori'),
+	// 	);
 
-		$this->db->where('idLowongan', $id);
-		$this->db->update('lowongan', $data);
-	}
+	// 	$this->db->where('idLowongan', $id);
+	// 	$this->db->update('lowongan', $data);
+	// }
 
-	public function hapusLowonganApi($id)
-	{
-		$this->db->where('idLowongan', $id);
-		$this->db->delete('lowongan');
-	}
+	// public function hapusLowonganApi($id)
+	// {
+	// 	$this->db->where('idLowongan', $id);
+	// 	$this->db->delete('lowongan');
+	// }
 
-	public function verifikasiPendaftarApi($idPendaftar, $keterangan)
-	{
-		if ($keterangan == 'terima') {
-			$data = array('statusDaftar' => 'lolos', 'keterangan' => 'Terverifikasi');
-		} else {
-			$data = array('statusDaftar' => 'tidak lolos', 'keterangan' => 'Terverifikasi');
-		}
-		$this->db->where('idPendaftar', $idPendaftar);
-		$this->db->update('pendaftar', $data);
-	}
+	// public function verifikasiPendaftarApi($idPendaftar, $keterangan)
+	// {
+	// 	if ($keterangan == 'terima') {
+	// 		$data = array('statusDaftar' => 'lolos', 'keterangan' => 'Terverifikasi');
+	// 	} else {
+	// 		$data = array('statusDaftar' => 'tidak lolos', 'keterangan' => 'Terverifikasi');
+	// 	}
+	// 	$this->db->where('idPendaftar', $idPendaftar);
+	// 	$this->db->update('pendaftar', $data);
+	// }
 
-	public function updateUserApi($id)
-	{
-		$data = array('namaMember' => $this->input->post('nama'), 'alamat' => $this->input->post('alamat'), 'tanggalLahir' => $this->input->post('tanggalLahir'), 'agama' => $this->input->post('agama'), 'noTelp' => $this->input->post('notelp'), 'jenisKelamin' => $this->input->post('jkl'), 'email' => $this->input->post('email'));
-		$this->db->where('fkUser', $id);
-		$this->db->update('member', $data);
-	}
+	// public function updateUserApi($id)
+	// {
+	// 	$data = array('namaMember' => $this->input->post('nama'), 'alamat' => $this->input->post('alamat'), 'tanggalLahir' => $this->input->post('tanggalLahir'), 'agama' => $this->input->post('agama'), 'noTelp' => $this->input->post('notelp'), 'jenisKelamin' => $this->input->post('jkl'), 'email' => $this->input->post('email'));
+	// 	$this->db->where('fkUser', $id);
+	// 	$this->db->update('member', $data);
+	// }
 
-	public function updatefotomApi($id)
-	{
-		$file = $this->upload->data();
-		$data = array('fotoMember' => $file['file_name']);
-		$this->db->where('fkUser', $id);
-		$this->db->update('member', $data);
-	}
+	// public function updatefotomApi($id)
+	// {
+	// 	$file = $this->upload->data();
+	// 	$data = array('fotoMember' => $file['file_name']);
+	// 	$this->db->where('fkUser', $id);
+	// 	$this->db->update('member', $data);
+	// }
 
 	// fungsi untuk mendapatkan user berdasar username
 	public function getUser($username)
