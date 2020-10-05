@@ -77,11 +77,12 @@ class Model_upldgbr extends CI_Model {
  //        $this->db->delete($table);
 	// }
 
-    public function get_by_id($kondisi)
+    public function get_by_id($id)
      //Query mengeupdate atau meng-edit berdasarkan idnya
     {
-        $this->db->from('tb_buku');
-        $this->db->where($kondisi);
+        // var_dump($data);die();
+        $this->db->from('tb_buku', $id);
+        $this->db->where($id);
         $query = $this->db->get();
         return $query->row();
     }
@@ -91,11 +92,11 @@ class Model_upldgbr extends CI_Model {
         $this->db->insert('tb_buku', $data);
         return TRUE;
      }
-    public function update2($data,$kondisi)
+    public function update2($data,$id)
     //Query untuk mengupdate data berdasarkan kondisi yaitu get_by_id
   {
-    var_dump($data);die();
-      $this->db->update('tb_buku',$data,$kondisi);
+    // var_dump($data);die();
+      $this->db->update('tb_buku',$data,$id);
       return TRUE;
   }
 
