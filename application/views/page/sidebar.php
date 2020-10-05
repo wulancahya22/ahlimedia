@@ -23,7 +23,7 @@
                     </a>
                 </li>
                 <!-- <li>
-                    <a href="<?php echo site_url('kategori'); ?>">
+                    <a href="<?php //echo site_url('kategori'); ?>">
                         <i class="pe-7s-note2"></i>
                         <p>KATEGORI</p>
                     </a>

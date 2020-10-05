@@ -249,9 +249,9 @@ $(document).ready(function() {
 
 
 <!-- SlimScroll -->
-<!-- script src="<?php echo base_url(); ?>assets/plugins/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- script src="<?php //echo base_url(); ?>assets/plugins/plugins/slimScroll/jquery.slimscroll.min.js"></script>
   FastClick -->
-<!-- <script src="<?php echo base_url(); ?>assets/plugins/plugins/fastclick/fastclick.js"></script> -->
+<!-- <script src="<?php //echo base_url(); ?>assets/plugins/plugins/fastclick/fastclick.js"></script> -->
 </body>
 </html>
 

@@ -93,7 +93,7 @@ public function updatedata()
     $config['max_width'] = '4480'; // pixel
     $config['max_height'] = '4480'; // pixel
     $config['file_name'] = $nama_file;
-
+    
     $this->upload->initialize($config);
 
       if (!empty($_FILES['filefoto']['name'])) {
@@ -104,7 +104,7 @@ public function updatedata()
                             'dokumen'          => $gambar['file_name'],
                             'judul'            => $judul,
                             'penulis'          => $penulis,
-                            'sinopsis'         => $sinopsis 
+                            'sinopsis'         => $sinopsis,
                           );
             // hapus foto pada direktori
             @unlink($path.$this->input->post('filelama'));

@@ -44,7 +44,7 @@
           <!-- file lama -->
           <input type="hidden" name="filelama" value="<?=$data->dokumen?>" required>
             <!-- ID -->
-          <input type="hidden" name="id" value="<?=$data->id_buku?>" required>
+          <input type="hidden" name="id_buku" value="<?=$data->id_buku?>" required>
             </div>
             </td>
          </tr>
