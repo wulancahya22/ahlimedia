@@ -104,6 +104,7 @@ public function updatedata()
                             'dokumen'          => $gambar['file_name'],
                             'judul'            => $judul,
                             'penulis'          => $penulis,
+                            'kategori'         => $kategori,
                             'sinopsis'         => $sinopsis,
                           );
             // hapus foto pada direktori
